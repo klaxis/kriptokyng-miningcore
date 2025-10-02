@@ -629,14 +629,24 @@ public class Program : BackgroundService
 
     private static void Logo()
     {
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine(@"
- ███╗   ███╗██╗███╗   ██╗██╗███╗   ██╗ ██████╗  ██████╗ ██████╗ ██████╗ ███████╗
- ████╗ ████║██║████╗  ██║██║████╗  ██║██╔════╝ ██╔════╝██╔═══██╗██╔══██╗██╔════╝
- ██╔████╔██║██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗██║     ██║   ██║██████╔╝█████╗
- ██║╚██╔╝██║██║██║╚██╗██║██║██║╚██╗██║██║   ██║██║     ██║   ██║██╔══██╗██╔══╝
- ██║ ╚═╝ ██║██║██║ ╚████║██║██║ ╚████║╚██████╔╝╚██████╗╚██████╔╝██║  ██║███████╗
+██   ██ ██████  ██ ██████  ████████  ██████  ██   ██ ██    ██ ███    ██  ██████  
+██  ██  ██   ██ ██ ██   ██    ██    ██    ██ ██  ██   ██  ██  ████   ██ ██       
+█████   ██████  ██ ██████     ██    ██    ██ █████     ████   ██ ██  ██ ██   ███ 
+██  ██  ██   ██ ██ ██         ██    ██    ██ ██  ██     ██    ██  ██ ██ ██    ██ 
+██   ██ ██   ██ ██ ██         ██     ██████  ██   ██    ██    ██   ████  ██████  
+                                                                                 
+                                                                                 
+███    ███ ██ ███    ██ ██ ███    ██  ██████   ██████  ██████  ██████  ███████   
+████  ████ ██ ████   ██ ██ ████   ██ ██       ██      ██    ██ ██   ██ ██        
+██ ████ ██ ██ ██ ██  ██ ██ ██ ██  ██ ██   ███ ██      ██    ██ ██████  █████     
+██  ██  ██ ██ ██  ██ ██ ██ ██  ██ ██ ██    ██ ██      ██    ██ ██   ██ ██        
+██      ██ ██ ██   ████ ██ ██   ████  ██████   ██████  ██████  ██   ██ ███████ 
+ 
 ");
-        Console.WriteLine(" https://github.com/blackmennewstyle/miningcore\n");
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine(" https://github.com/lurchinms/kriptokyng-miningcore\n");
         Console.WriteLine(" Donate to one of these addresses to support the project:\n");
         Console.WriteLine(" ETH  - 0xbC059e88A4dD11c2E882Fc6B83F8Ec12E4CCCFad");
         Console.WriteLine(" BTC  - 16xvkGfG9nrJSKKo5nGWphP8w4hr2ZzVuw");
@@ -651,7 +661,7 @@ public class Program : BackgroundService
         Console.WriteLine(" XEL  - xel:ajnsfv065qusndt0hfsngecrnf5690drmqmc0uq0etlx8zjlcyzqq2slgvt");
         Console.WriteLine(" CTXC - 0xbb60200d5151a4a0f9a75014e04cf61a0a9f0daf");
         Console.WriteLine(" ZANO - ZxDKT1aqiEXPA5cDADtYEfMR1oXsRd68bby4nzUvVmnjHzzrfvjwhNdQ9yiWNeGutzg9LZdwsbP2FGB1gNpZXiYY1fCfpw33c");
-        Console.WriteLine();
+        Thread.Sleep(2000);
     }
 
     private static void ConfigureLogging()
